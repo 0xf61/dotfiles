@@ -1,12 +1,19 @@
-defshell -$SHELL
-startup_message off
-defscrollback 10000
+activity "Activity in %t(%n)"
+attrcolor b ".I"
+autodetach on
+caption always "%?%F%{= Kk}%:%{=u kR}%?  %h %-024=%{+b} %C%a %D %d %M %Y%{= db}""}}}}"
+crlf off
+defbce "on"
+deflog on
+defmonitor on
+defscrollback 15000
+defshell fish
+defutf8 on
+hardstatus alwayslastline "%{=b}%{G} : %{b}%w %=%{kG}%C%A"
 logfile $HOME/.cache/screenlog/screenlog-%n-%Y%m%d-%0c.%s-%t.log
 logfile flush 5
 logtstamp on
-deflog on
-defmonitor on
-caption always "%?%F%{= Kk}%:%{=u kR}%?  %h %-024=%{+b} %C%a %D %d %M %Y%{= db}""}}}}"
-defutf8 on
-activity "Activity in %t(%n)"
-setenv TERM xterm-256color
+startup_message off
+term screen-256color
+termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+termcapinfo xterm* ti@:te@
