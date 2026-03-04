@@ -10,7 +10,7 @@
     "tray",
     "backlight",
     "pulseaudio",
-    "network",
+    "network"
   ],
   "hyprland/workspaces": {
     "format": "{icon}: {name}",
