@@ -1,0 +1,23 @@
+format = """
+$directory\
+$character"""
+
+right_format = """
+$all"""
+
+[directory]
+truncation_length = 1
+format = "[$path]($style) "
+truncate_to_repo = false
+
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"
+
+[time]
+disabled = false
+format = '[$time]($style) '
+
+[cmd_duration]
+min_time = 500
+format = "took [$duration]($style) "
