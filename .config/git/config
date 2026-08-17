@@ -1,0 +1,22 @@
+[user]
+  name = 0xf61
+  email = emirhan@kurt.link
+  signingkey = ~/.ssh/id_ed25519.pub
+[gpg]
+  format = ssh
+[commit]
+  gpgsign = true
+[core]
+  editor = nvim
+[url "git@github.com:"]
+  insteadOf = https://github.com/
+[init]
+  defaultBranch = main
+[pull]
+  rebase = true
+[push]
+  autoSetupRemote = true
+[fetch]
+  prune = true
+[rerere]
+  enabled = true
