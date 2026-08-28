@@ -20,3 +20,5 @@
   prune = true
 [rerere]
   enabled = true
+[alias]
+	pr = "!f() { git fetch -fu ${2:-origin} refs/pull/$1/head:pr/$1 && git checkout pr/$1; }; f"
